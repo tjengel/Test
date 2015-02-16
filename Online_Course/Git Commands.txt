@@ -1,0 +1,12 @@
+Git commit commands
+Clone repository to local folder
+Create branch
+	git checkout -b Online_Course
+Add folder to local machine
+Add changes 2 ways
+	git add -A
+	git add Online_Course
+Commit changes
+	git commit -m "Online Test Commit"
+Push changes
+	git push origin Online_Course
