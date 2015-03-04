@@ -8,3 +8,23 @@ p {
 font-family:Arial;
 font-size:14px;
 }
+
+.curds {
+color:gold;
+font-size:26px;
+}
+
+p.greenbay {
+color:green;
+font-size:26px;
+}
+
+p#id {
+color:black;
+font-size:30px;
+}
+
+.spantag{
+font-size:40px;
+color:yellow;
+}
