@@ -8,14 +8,17 @@ margin: 0px auto;
 }
 
 #history{
+font-family: Arial, Helvetica;
 border: 1px solid black;
 color: green;
 width: 100%;
 height: auto;
 background-color: black;
+line-height: 25px;
 }
 
 #founding{
+font-family: Helvetica;
 border: 1px solid black;
 color: green;
 width: 100%;
