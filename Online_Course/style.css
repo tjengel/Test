@@ -1,3 +1,6 @@
+body{
+background-color: #FFFF00;
+}
 
 #container{
 border: 1px solid black;
@@ -9,18 +12,21 @@ margin: 0px auto;
 
 #history{
 font-family: Arial, Helvetica;
-border: 1px solid black;
-color: green;
+border: 5px #080808;
+color: #006600;
 width: 100%;
 height: auto;
-background-color: black;
+background-color: #282828;
 line-height: 25px;
+text-align: center;
+margin-top: 20px;
+padding-bottom: 20px;
 }
 
 #founding{
 font-family: Helvetica;
 border: 1px solid black;
-color: green;
+color: #006600;
 width: 100%;
 height: auto;
 background-color: grey;
