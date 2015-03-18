@@ -1,3 +1,12 @@
+#container label{
+  width: 150px;
+  float: left;
+}
+
+#container .button{
+margin-left: 120px;
+}
+
 body{
 background-color: #FFFF00;
 }
