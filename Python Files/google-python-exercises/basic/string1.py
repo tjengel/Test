@@ -25,13 +25,13 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
 
-  if count <= 10:
-      print "Number of donuts: %d" % count
+  if count < 10:
+      return "Number of donuts: %d" % count
 
   else:
-      print "Number of donuts: many"
+      return "Number of donuts: many"
 
-donuts(int(raw_input("How many donuts would you like?\n")))
+
 
 
 # B. both_ends
@@ -43,12 +43,11 @@ def both_ends(s):
 
   if len(s) > 2:
      string = s[:len(s) - (len(s) - 2)] + s[len(s)-2:]
-     print string
+     return string
 
   else:
-      print ""
+      return ""
 
-both_ends(raw_input("Give me a string\n"))
 
 
 # C. fix_start
@@ -64,9 +63,7 @@ def fix_start(s):
     new = s[0]
     s2 = s[1:]
     s3 = new[:] + s2.replace(new,"*")[:]
-    print s3
-
-fix_start(raw_input("Enter a string that has one character more than once.\n"))
+    return s3
 
 
 # D. MixUp
@@ -77,8 +74,13 @@ fix_start(raw_input("Enter a string that has one character more than once.\n"))
 #   'dog', 'dinner' -> 'dig donner'
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
-  # +++your code here+++
-  return
+  new_a1 = b[:2]
+  new_a2 = a[2:]
+  new_b1 = a[:2]
+  new_b2 = b[2:]
+  new_string = new_a1 + new_a2 + ' ' + new_b1 + new_b2
+  return new_string
+
 
 
 # Provided simple test() function used in main() to print

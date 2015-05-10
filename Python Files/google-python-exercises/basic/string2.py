@@ -16,8 +16,13 @@
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 def verbing(s):
-  # +++your code here+++
-  return
+  if len(s) < 3:
+      return s
+  elif s[len(s) - 3:] == "ing":
+      return s + "ly"
+  else:
+      return s + "ing"
+
 
 
 # E. not_bad
@@ -29,8 +34,16 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-  # +++your code here+++
-  return
+  sub1 = 'not'
+  sub2 = 'bad'
+
+  if s.find(sub1) < s.find(sub2):
+      replace = s[s.find(sub1):(s.find(sub2) + 3)]
+      s = s.replace(replace,"good")
+      return s
+  else:
+      return s
+
 
 
 # F. front_back
@@ -41,9 +54,33 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-  # +++your code here+++
-  return
+  if len(a) % 2 == 1 and len(b) % 2 == 1:
+      front_a = a[:(len(a)/2 + 1)]
+      back_a = a[(len(a)/2 + 1):]
+      front_b = b[:(len(b)/2 + 1)]
+      back_b = b[(len(b)/2 + 1):]
+      return front_a + front_b + back_a + back_b
 
+  elif len(a) % 2 == 1:
+      front_a = a[:(len(a)/2 + 1)]
+      back_a = a[(len(a)/2 + 1):]
+      front_b = b[:(len(b)/2)]
+      back_b = b[(len(b)/2):]
+      return front_a + front_b + back_a + back_b
+
+  elif len(b) % 2 == 1:
+      front_a = a[:(len(a)/2)]
+      back_a = a[(len(a)/2):]
+      front_b = b[:(len(b)/2 + 1)]
+      back_b = b[(len(b)/2 + 1):]
+      return front_a + front_b + back_a + back_b
+
+  else:
+      front_a = a[:(len(a)/2)]
+      back_a = a[(len(a)/2):]
+      front_b = b[:(len(b)/2)]
+      back_b = b[(len(b)/2):]
+      return front_a + front_b + back_a + back_b
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
