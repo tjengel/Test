@@ -40,16 +40,17 @@ def front_x(words):
     words1 = []
     words2 = []
 
-    if i[0] =='x' in words:
-        words1.append(i)
-        words1.sort()
-    else:
-        words2.append(i)
-        words2.sort()
+    for i in words:
+        if i[0] =='x':
+            words1.append(i)
+            words1.sort()
+        else:
+            words2.append(i)
+            words2.sort()
 
-    words_c = words1.append(words2)
+        words_c = words1 + words2
 
-  return words_c
+    return words_c
 
 
 
@@ -60,8 +61,8 @@ def front_x(words):
 # [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 # Hint: use a custom key= function to extract the last element form each tuple.
 def sort_last(tuples):
-  # +++your code here+++
-  return
+  sorted_tuples = sorted(tuples, key = lambda tuples: tuples[-1])
+  return sorted_tuples
 
 
 # Simple provided test() function used in main() to print
