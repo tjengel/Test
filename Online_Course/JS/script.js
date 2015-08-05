@@ -1,3 +1,9 @@
+window.alert("50% discount on everything");
+
+var alertName = "Welcome to my webpage";
+
+document.write("<h1>" + alertName + "</h1>");
+
 document.write("hello, world" + "<br>"); //This is a comment
 /*
 Creates many
