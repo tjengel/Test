@@ -21,4 +21,19 @@ var desc = "Someone got robbed";
 
 document.write(x + y + "<br>") // Writes x + y to page
 document.write(candy + shoe + "<br>")
-document.write("<h1>" + title + "</h1>" + "<br />" + desc)
+document.write("<h1>" + title + "</h1>" + "<br />" + desc + "<br />")
+
+function firstname(){
+
+    document.write("Tyler ");
+
+}
+
+function lastname(){
+
+    document.write("Engel");
+
+}
+
+firstname();
+lastname();
